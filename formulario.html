@@ -1,0 +1,71 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <label>
+            Login*:
+            <input type="email" placeholder="Digite um e-mail" required>
+        </label>
+
+        <br>
+        
+        <label>
+            Senha:
+            <input type="password">
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox">
+            Manter-me logado
+        </label>
+
+        <div>
+            Idioma
+
+            <label>
+                <input type="radio" name="idioma" checked>
+                Português
+            </label>
+
+            <label>
+                <input type="radio" name="idioma">
+                Inglês
+            </label>
+        </div>
+
+        <label>
+            Data de nascimento: <input type="date">
+        </label>
+
+        <br>
+
+        <label>
+            Estado:
+
+            <select>
+                <option>SP</option>
+                <option>RJ</option>
+                <option>MG</option>
+            </select>
+        </label>
+
+        <br>
+
+        <label>
+            Sobre você:<br>
+
+            <textarea cols="30" rows="7" placeholder="Escreva sobre você" required></textarea>
+        </label>
+
+        <br>
+
+        <button>Fazer login</button>
+    </form>
+</body>
+</html>
