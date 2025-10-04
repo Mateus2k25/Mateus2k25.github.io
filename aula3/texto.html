@@ -1,0 +1,20 @@
+<html>
+<head>
+ <title>Recebendo dados</title>
+ <meta charset="UTF-8">
+</head>
+<body>
+    Digite seu nome  <input type="text" id="texto" placeholder="Digite aqui">
+
+ <br>
+ <button id="botao">Enviar</button>
+
+<script>
+document.getElementById('botao').onclick = function() {
+   var texto = document.getElementById('texto').value;
+
+   alert('Olá: ' + texto);
+};
+</script>
+</body>
+</html>

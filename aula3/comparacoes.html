@@ -1,0 +1,25 @@
+<html>
+<head>
+ <title>Comparações</title>
+ <meta charset="UTF-8">
+</head>
+<body>
+Digite um número <input type="number" id="numero" placeholder="Digite um número">
+<br>
+<button id="botao">Enviar</button>
+
+<script>
+document.getElementById('botao').onclick = function() {
+  var numero = document.getElementById('numero').value;
+
+  if (numero > 5) {
+      alert("Número maior que 50");
+  } else if (numero < 5) {
+      alert("Número menor que 50");
+  } else if (numero == 5) {
+      alert("Número igual a 50");
+  }
+};
+</script>
+</body>
+</html>

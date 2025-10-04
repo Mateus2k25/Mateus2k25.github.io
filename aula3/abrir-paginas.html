@@ -1,0 +1,22 @@
+<html>
+<head>
+ <title>Abrindo páginas</title>
+ <meta charset="UTF-8">
+</head>
+<body>
+ <input type="url" id="url-da-pagina" placeholder="Digite o endereço do site" style="width: 300px;">
+ <br>
+ <button id="abrir">Abrir página</button>
+
+<script>
+document.getElementById('abrir').onclick = function() {
+   var texto = document.getElementById('url-da-pagina').value;
+   if (!texto.startsWith('http://') && !texto.startsWith('https://')) {
+       texto = 'http://' + texto;
+   }
+
+   window.open(texto);
+ };
+</script>
+</body>
+</html>

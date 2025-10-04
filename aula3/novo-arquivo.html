@@ -1,0 +1,29 @@
+<html>
+<head>
+Digite um texto <title>Comparação de texto</title>
+ <meta charset="UTF-8">
+</head>
+<body>
+<input type="text" id="texto" placeholder="Digite aqui" style="width: 300px;">
+<br>
+<button id="botao">Enviar</button>
+
+<script>
+document.getElementById('botao').onclick = function() {
+  var texto = document.getElementById('texto').value;
+
+  if (texto.includes('teste')) {
+    alert('O texto contém a palavra "teste"');
+  } else if (texto.startsWith('indaiatuba')) {
+    alert('O texto começa com "indaiatuba"');
+  } else if (texto.endsWith('sp')) {
+    alert('O texto termina com "sp"');
+  } else if (texto === 'exato') {
+    alert('O texto é exatamente "exato"');
+  } else {
+    alert('Texto não reconhecido');
+  }
+};
+</script>
+</body>
+</html>

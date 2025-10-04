@@ -1,0 +1,24 @@
+<html>
+<head>
+ <title>Data</title>
+ <meta charset="UTF-8">
+</head>
+<body>
+A data atual é: <span id="data-atual"></span>
+
+<script>
+ var dataAtual = new Date();
+
+ var dia = dataAtual.getDate();
+ var mes = dataAtual.getMonth() + 1;
+ var ano = dataAtual.getFullYear();
+
+ var horas = dataAtual.getHours();
+ var minutos = dataAtual.getMinutes();
+ var segundos = dataAtual.getSeconds();
+
+ document.getElementById('data-atual').textContent = dia + '/' + mes + '/' + ano + ' ' + horas + ':' + minutos + ':' + segundos;
+</script>
+</body>
+</html>
+ 
