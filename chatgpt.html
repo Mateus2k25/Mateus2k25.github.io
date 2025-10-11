@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pizzaria Delícia</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      padding-top: 56px;
+    }
+    .hero {
+      background: url('https://images.pexels.com/photos/1580464/pexels-photo-1580464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center/cover no-repeat;
+      height: 60vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 6px #000;
+    }
+    .menu-img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #343a40;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Pizzaria Delícia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="text-center">
+      <h1 class="display-4 fw-bold">Bem-vindo à Pizzaria Delícia</h1>
+      <p class="lead">As melhores pizzas da cidade feitas com amor e ingredientes frescos!</p>
+      <a href="#menu" class="btn btn-warning btn-lg">Confira o Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Nosso Menu</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://images.pexels.com/photos/4109086/pexels-photo-4109086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top menu-img" alt="Pizza Margherita" />
+            <div class="card-body">
+              <h5 class="card-title">Pizza Margherita</h5>
+              <p class="card-text">Tomate, mussarela, manjericão fresco e azeite extra virgem.</p>
+              <p class="fw-bold">R$ 35,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://images.pexels.com/photos/4109083/pexels-photo-4109083.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top menu-img" alt="Pizza Calabresa" />
+            <div class="card-body">
+              <h5 class="card-title">Pizza Calabresa</h5>
+              <p class="card-text">Calabresa fatiada, cebola, mussarela e molho de tomate.</p>
+              <p class="fw-bold">R$ 38,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://images.pexels.com/photos/4109087/pexels-photo-4109087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top menu-img" alt="Pizza Quatro Queijos" />
+            <div class="card-body">
+              <h5 class="card-title">Pizza Quatro Queijos</h5>
+              <p class="card-text">Mussarela, gorgonzola, parmesão e provolone.</p>
+              <p class="fw-bold">R$ 42,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre Nós</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Equipe da pizzaria" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6">
+          <p class="lead">A Pizzaria Delícia está no coração da cidade desde 1995, oferecendo pizzas artesanais feitas com ingredientes selecionados. Nosso compromisso é proporcionar uma experiência gastronômica única, combinando tradição e sabor.</p>
+          <p>Venha nos visitar ou peça pelo nosso delivery e descubra por que somos a escolha número 1 para os amantes de pizza!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contato" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contato</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p><strong>Endereço:</strong> Rua das Pizzas, 123, Centro, Sua Cidade</p>
+        <p><strong>Telefone:</strong> (11) 98765-4321</p>
+        <p><strong>Email:</strong> contato@pizzariadelicia.com.br</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Pizzaria Delícia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (Popper + Bootstrap JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
